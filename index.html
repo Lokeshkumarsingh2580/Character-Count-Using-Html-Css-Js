@@ -16,6 +16,7 @@
     "
   >
     <textarea
+      style="border: none; outline: none"
       name="text"
       id="text"
       cols="30"
@@ -34,8 +35,8 @@
       // });
 
       function count() {
-        const val = text.value.length;
-        para.innerHTML = `Count ${val}`;
+        const val = text.value.trim();
+        para.innerHTML = `Count ${val.length}`;
       }
     </script>
   </body>
